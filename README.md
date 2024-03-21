@@ -1,4 +1,4 @@
-# CMPE-273---LinkedIn-Prototype
+LinkedIn-Prototype
 
 Guidelines for Deployment:
 
@@ -21,7 +21,7 @@ It Looks like this:
                 export default instance;
 
 To make axios call simply use it like this:
-Example from Job Post Action: 
+Example from Job Post Action:
 import axios from '../../axios-setup';
 
 axios.post('/jobupdate',data)
@@ -31,17 +31,15 @@ NavBar is in component folder:
 
 import NavBar from '../NavBar/NavBar';
 
-Simple add <NavBar />  inside div.
+Simple add <NavBar /> inside div.
 
 In the Backend and Kafka Backed there is db folder where mongoose configs are stored.
 SQL is not used at the moment but pool.js available for future use in Backend
 
-
 To Run create the following kafka topics:
+
 1. jobpost
 2. getjobpost
 3. response_topic
 4. createuser
 5. getprofile
-
-
